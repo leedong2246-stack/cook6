@@ -1,0 +1,65 @@
+[
+  {
+    "capability": "code",
+    "source": "github leedong2246-stack/cook5 (Lovable TanStack project, same template revision)",
+    "outcome": "copied src, tests, project rules, roadmap, north star, AI packages",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "schema",
+    "source": "drizzle/migrations 0000_community_recipes.sql + 0001_user_kitchen_data.sql",
+    "outcome": "migrated to Lovable Cloud byte-for-byte",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "records",
+    "source": "6 seed community recipes in migration; real shared recipes + signed-in users' kitchen rows live in cook5's backend",
+    "outcome": "seeds migrated; real rows need an export",
+    "status": "pending",
+    "next_action": "user exports community_recipes, user_ingredients, user_favorites, user_regulars CSV from cook5 (Cloud -> Database -> Tables)"
+  },
+  {
+    "capability": "auth identities",
+    "source": "email/password sign-up in cook5 backend",
+    "outcome": "email sign-in + instant sign-up enabled here; existing accounts need an export and will set a new password on first visit",
+    "status": "pending",
+    "next_action": "user exports user list (email, id) from cook5 Cloud -> Users"
+  },
+  {
+    "capability": "browser-local guest data",
+    "source": "localStorage",
+    "outcome": "keep",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "signed-in kitchen sync + guest import popup",
+    "source": "user_ingredients / user_favorites / user_regulars + GuestImportDialog",
+    "outcome": "keep",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "ai recipe recommendation",
+    "source": "Lovable AI Gateway via LOVABLE_API_KEY (server function)",
+    "outcome": "keep",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "secrets",
+    "source": "LOVABLE_API_KEY only (managed)",
+    "outcome": "keep",
+    "status": "verified",
+    "next_action": "none"
+  },
+  {
+    "capability": "verification",
+    "source": "-",
+    "outcome": "build OK, 27 tests pass; browser: guest->signup->import popup->Cloud rows (urgent flag kept), second-device sync, edits persist, logout hides account data, decline keeps guest data and is not re-asked, second user isolated, favorites + own recipes persist, AI suggestions return",
+    "status": "verified",
+    "next_action": "none"
+  }
+]

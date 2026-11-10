@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794302669072,
+      "tag": "0000_community_recipes",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794302696225,
+      "tag": "0001_user_kitchen_data",
+      "breakpoints": true
+    }
+  ]
+}
